@@ -1,91 +1,36 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+"use client";
+import { FcConferenceCall } from "react-icons/fc";
+import {IoIosPeople} from "react-icons/io"
+import {BsFillBookFill} from "react-icons/bs"
+import {BiLocationPlus} from "react-icons/bi"
 
-const inter = Inter({ subsets: ['latin'] })
-
+import { Text, Image, Box, Heading, Flex, Container, Button, Stack, Card, CardBody,HStack, Grid, GridItem } from "@chakra-ui/react";
+import Courses from "./Courses";
+import ConmmunitySectoin from "./CommunitySection";
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <>
+      <Container maxW="container.lg" padding={"0px"} mt="10%">
+        <Box pr={"30%"}>
+          <Heading as="h1" fontSize={"5xl"} mb="10px">
+            Become a Certified Developer with Panaverse
+          </Heading>
+          <Text fontSize={"lg"}>
+            A One and Quarter Years Panaverse DAO Earn as you Learn Program.
+            Consolidating Web 3.0, Metaverse, Artificial Intelligence (AI),
+            Cloud, Edge, and Ambient Computing/IoT Technologies
+          </Text>
+        </Box>
+        <Button colorScheme={"green"} mt={"5%"}>
+          Apply
+        </Button>
+      </Container>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
+      
+      
+    
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </>
+  );
 }
