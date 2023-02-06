@@ -2,7 +2,7 @@ import { Box, Container, Heading ,Text} from "@chakra-ui/react";
 
 export default function GoalSection(){
     return (
-        <Container centerContent="true">
+        <Container centerContent>
             <Heading>Our Ultimate Goal</Heading>
             <Box mt={"5%"}>
                 <Text size={"md"}>

@@ -2,7 +2,7 @@ import { Container,Box, Heading, Grid, GridItem, Divider, Stack ,Text} from "@ch
 
 export default function ConmmunitySectoin(){
     return (
-        <Container mt={"25%"} centerContent="true">
+        <Container mt={"25%"} centerContent>
             <Box><Heading>Community</Heading></Box>
             <Grid h={"200px"} templateColumns={"repeat(2,2fr)"} mt="10%">
                 <GridItem>

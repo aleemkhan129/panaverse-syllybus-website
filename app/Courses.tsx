@@ -2,7 +2,7 @@ import { Container, Heading,Box,Grid,GridItem,Text} from "@chakra-ui/react"
 
 export default function Courses(){
     return (
-        <Container centerContent="true" mt={"5%"}>
+        <Container centerContent mt={"5%"}>
         <Heading>Courses Offered</Heading>
         <Box mt={"20px"}>
           <Grid
