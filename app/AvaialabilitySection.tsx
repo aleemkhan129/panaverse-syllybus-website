@@ -6,7 +6,7 @@ import {BiLocationPlus} from "react-icons/bi"
 export default function AvailabilitySection(){
     return(
         
-      <Container mt={"5%"} centerContent="true">
+      <Container mt={"5%"} centerContent>
       <Box>
         <Heading>Availability</Heading>
       </Box>
